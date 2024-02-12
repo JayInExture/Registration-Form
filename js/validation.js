@@ -1,7 +1,5 @@
 import "./jquery-3.7.1.js";
-// $("#name").on("keyup", function (event){
-//     console.log("key",event.key)
-// })
+
 
 
 $("#dob").attr("max", new Date().toISOString().split("T")[0]);
@@ -192,8 +190,6 @@ function register_user() {
     User_data.push(reg_user);
     localStorage.setItem("reg_user", JSON.stringify(User_data));
 
-    // $("#data").append(reg_Name +""+ reg_Email)
-    // console.log("Done")
 
 
     ShowUser()
@@ -231,58 +227,3 @@ function ShowUser() {
 
     
 }
-
-
-// reg_user.Intersts
-
-
-    // if (!EmailValidation(Email)) {
-    //     $("#email_error").text("Enter Valid Email")
-    //     return false
-    // }
-    // if (!validatePhoneNumber(Phone)) {
-    //     // $("#phone_error").text("Please enter a valid 10-digit phone number.");
-    //     $("#phone_error").text("Enter Valid Phone Number")
-    //     return false;
-    // } else {
-    //     $("#phone_error").text("");
-    // }
-
-    // if (Name == "" || Email == "" || Phone == "" || Dob == "" || Gender == "") {
-    //     console.log("null")
-    //     $("#phone_error").text("Enter Phone")
-    //     return false
-    // }
-
-
-
-
-
-
-    // $("#name_error").text("yes")
-
-    
-    // used for check is all values collecting from interests
-    //     let selectedInterests = [];
-
-    // $("input[name='interests']:checked").each(function() {
-    //     selectedInterests.push($(this).val());
-    // });
-
-    // console.log("Selected interests:", selectedInterests);
-    // console.log("Selected interests:", selectedInterests.join(", "));
-
-
-
-    // if EmailValidation fails it return false  otherwishe true
-
-    // if(!Name=="" && !Email=="" ){
-    //     console.log(Name)
-    //     // console.log(Email)       
-    //     if(!Email=="" ){
-    //         EmailValidation(Email)
-    //     }
-    //     return true
-
-    // }
-
