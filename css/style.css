@@ -172,32 +172,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: transparent;
     color: transparent;
     cursor: pointer;
-    /* bottom: auto; */
-    /* height: auto; */
-    /* left: inherit; */
-    /* top: auto; */
        position: absolute;
-    /* right: auto; */
     width: 38.8%;
 }
 /* For screens smaller than 600px */
 @media (max-width: 600px) {
     input[type="date"]::-webkit-calendar-picker-indicator {
-        width: 80%; /* Adjust as needed for smaller screens */
+        width: 80%; 
     }
 }
 
-/* For screens larger than 600px */
+
 @media (min-width: 601px) {
     input[type="date"]::-webkit-calendar-picker-indicator {
-        width: 38.8%; /* Original width for larger screens */
+        width: 38.8%;
     }
 }
 
 
 @media (min-width: 2560px) {
     input[type="date"]::-webkit-calendar-picker-indicator {
-        width: 22.8%; /* Original width for larger screens */
+        width: 22.8%; 
     }
 }
 

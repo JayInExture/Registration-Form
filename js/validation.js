@@ -1,7 +1,5 @@
 import "./jquery-3.7.1.js";
 
-
-
 $("#dob").attr("max", new Date().toISOString().split("T")[0]);
 
 $("#name, #email,#gender, #phone, #dob, input[name='country'], input[name='interests']").on("input", function () {
@@ -223,7 +221,5 @@ function ShowUser() {
             "<td>" + reg_user.About + "</td>" +
             "</tr>");
     })
-
-
     
 }
