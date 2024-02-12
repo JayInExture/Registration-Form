@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="for_hide">
+            Registration Form
+        </div>
+    </header>
+    <section class="container for_hide">
+        <div class="row">
+
+
+            <div class="col-12 left_img col-md-6">
+
+            </div>
+
+            <form class="col-12 col-md-6">
+                <p>Note:- all <span>*</span> fields are mandatory</p>
+                <div>
+                    <label for="name" class="form-label">Name:-</label>
+                    <input type="text" id="name" name="name" class="form-control " required>
+                    <span id="name_error"></span>
+                </div>
+                <div>
+                    <label class="form-label" for="email">Email:-</label>
+                    <input class="form-control" type="email" id="email" name="email" required>
+                    <span id="email_error"></span>
+                </div>
+                <div>
+                    <label class="form-label" for="phone">Phone Number:-</label>
+                    <input class="form-control" type="tel" id="phone" name="phone" required>
+                    <span id="phone_error"></span>
+                </div>
+                <div id="dob_container">
+                    <label class="form-label" for="dob">Date of Birth:-</label>
+                    <input class="form-control" type="date" id="dob" name="dob" required>
+                    <span id="dob_error"></span>
+                </div>
+                <div>
+                    <label class="form-label" for="gender">Gender:-</label>
+                    <select class="form-control" title="Gender" name="gender" id="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">other</option>
+                    </select>
+                    <span id="gender_error"></span>
+                </div>
+
+                <div>
+                    <label class="form-label">Country:-</label>
+                    <div class="countries">
+                        <label><input type="radio" name="country" value="india">India</label>
+                        <label><input type="radio" name="country" value="USA">USA</label>
+                        <label><input type="radio" name="country" value="Canada">Canada</label>
+                        <label><input type="radio" name="country" value="other">Other..</label>
+                    </div>
+                    <span id="country_error"></span>
+                </div>
+                <div>
+                    <label class="form-label">Interests:-</label><br>
+                    <div class="interests">
+                        <label><input type="checkbox" name="interests" value="sports">Sports</label>
+                        <label><input type="checkbox" name="interests" value="music">Music</label>
+                        <label><input type="checkbox" name="interests" value="travel">Travel</label>
+                        <label><input type="checkbox" name="interests" value="other">Other..</label>
+                    </div>
+                    <span id="interests_error"></span>
+                </div>
+
+                <div>
+
+                    <label for="about">About your self :-</label><br>
+                    <sub>(you can tell as about your self if you want)</sub>
+                    <div>
+                        <textarea name="about" id="about" maxlength="450"></textarea>
+                    </div>
+                </div>
+
+
+                <div>
+                    <button type="button" id="submit_button" class="btn btn-secondary">
+                        Button
+                    </button>
+                    <button type="button" id="reset_button" class="btn btn-danger">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="container admin">
+        <div>
+            <h3>Admin</h3>
+            <button class="btn btn-primary" id="back_form">Back</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                    <th>About</th>
+                </tr>
+            </thead>
+            <tbody id="data"> </tbody>
+        </table>
+       
+    </div>
+    <script defer type="module" src="./js/validation.js"></script>
+    <script src="./css/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./js/jquery-3.7.1.js"></script> -->
+</body>
+
+</html>

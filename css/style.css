@@ -1,0 +1,208 @@
+
+body{
+    background-image: url();
+    background-color: #252525;
+    color: #ffff;
+   padding: 2%;
+}
+header>div {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+}
+section{
+    margin-top: 2%;
+    border: 0.2rem solid gold;
+    border-radius: 10px;
+    box-shadow: 0px 0px  50px #52d4ff;
+    margin-bottom: 2%;   
+}
+
+form.container {
+    width: 50%;
+}
+.left_img{
+    background-image: url(../assets/image/signin-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     
+}
+
+label{
+    align-self: start;
+}
+
+form>p{
+    color:#b872ff;
+    padding-top: 1%;
+    padding-left: 2%;
+    text-align: left;
+    width: 100%;
+}
+form>p span {
+    color: red;
+}
+form>div {
+    padding: 3% 2%;
+    width: 100%;
+}
+form>div:last-child{
+    display: flex;
+    justify-content: center;
+}
+
+.form-label::before{
+content: "*";
+color:  red;
+}
+.interests, .countries {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interests label, .countries label {
+    margin-right: 20px;
+}
+
+#reset_button{
+    margin-left: 2%;
+}
+@media (max-width: 600px) {
+    .interests, .countries {
+        flex-direction: column;
+        flex-wrap: nowrap; 
+    }
+
+    .interests label, .countries label {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .interests input[type="checkbox"], .countries input[type="radio"] {
+        flex-basis: auto; 
+    }
+    sub{
+       position: static;
+       font-size: .65em;
+       line-height: 0;
+       vertical-align: baseline;
+    }
+    .admin th, .admin td {
+        padding: 7px;
+        font-size: 14px;
+    }
+    .admin{
+        padding: 0% 2%;
+        overflow: scroll;
+    }
+    .admin td {
+        overflow-x: scroll;
+    }
+    
+.left_img{
+    display: none;
+}
+    
+}
+sub{
+    color: #6a6ae5;
+   position: static;
+   font-size: .85em;
+   line-height: 0;
+   vertical-align: baseline;
+}
+
+.countries{
+    padding-left: 2%;
+    border-radius: 0.25rem;
+}
+.interests{
+    padding-left: 2%;
+    border-radius: 0.25rem;
+}
+
+textarea{
+ width: 100%;   
+}
+
+table{
+    overflow: scroll;
+    width: 100%;
+}
+tr{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* width: 100%; */
+}
+
+ tr >td:last-child{
+    height: 3rem;
+   overflow: scroll;
+}
+
+th, td{
+    width: 100%;
+}
+
+.admin{
+    text-align: center;
+    display: none;
+}
+
+.invalid
+{
+    border: 2px solid rgb(255, 61, 61);
+    box-shadow: 0px 0px  15px red;
+} 
+.valid{
+border: 2px solid #2fff2f;
+box-shadow: 0px 0px  15px #2fff2f;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+    /* bottom: auto; */
+    /* height: auto; */
+    /* left: inherit; */
+    /* top: auto; */
+       position: absolute;
+    /* right: auto; */
+    width: 38.8%;
+}
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 80%; /* Adjust as needed for smaller screens */
+    }
+}
+
+/* For screens larger than 600px */
+@media (min-width: 601px) {
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 38.8%; /* Original width for larger screens */
+    }
+}
+
+
+@media (min-width: 2560px) {
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 22.8%; /* Original width for larger screens */
+    }
+}
+
+
+#back_form{
+    position: relative;
+    left: 40%;
+}
